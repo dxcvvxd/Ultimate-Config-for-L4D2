@@ -12,9 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Zip
-        run: zip -r main.zip .
+      # - name: Zip
+        # run: zip -r main.zip cfg materials
 
       - uses: actions/upload-artifact@v4.6.2
         with:
-          path: main.zip
+          path: cfg materials
+          compression-level: 9
+          name: config
