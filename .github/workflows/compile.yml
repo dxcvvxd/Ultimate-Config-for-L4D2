@@ -17,5 +17,4 @@ jobs:
 
       - uses: actions/upload-artifact@v4.6.2
         with:
-          name: Config.zip
           path: main.zip
